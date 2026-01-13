@@ -9,381 +9,361 @@
 
 *A modern, real-time platform connecting blood donors with recipients in emergencies*
 
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/bloodbridge?style=social)](https://github.com/yourusername/bloodbridge)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/yourusername/bloodbridge/pulls)
-
 </div>
 
-📋 Navigation Table
+---
+
+## 📋 Navigation Table
+
 <div align="center">
-📚 Section	📝 Description	🚀 Quick Link
-✨ Features	Complete feature overview	View Features ↓
-🛠️ Tech Stack	Technologies & frameworks used	View Tech Stack ↓
-🚀 Quick Start	Get started in 5 minutes	Quick Start ↓
-🔧 Installation	Detailed setup guide	Install Guide ↓
-📁 Structure	Project organization	View Structure ↓
-⚙️ Environment	Configuration variables	View Config ↓
-📡 API Docs	API endpoints & usage	API Docs ↓
-🧪 Testing	Testing procedures	Run Tests ↓
-🤝 Contributing	How to contribute	Contribute ↓
-📄 License	License information	View License ↓
+
+| 📚 Section | 📝 Description | 🚀 Quick Link |
+|------------|---------------|---------------|
+| **✨ Features** | Complete feature overview | [View Features ↓](#-features) |
+| **🛠️ Tech Stack** | Technologies & frameworks used | [View Tech Stack ↓](#️-tech-stack) |
+| **🚀 Quick Start** | Get started in 5 minutes | [Quick Start ↓](#-quick-start) |
+| **🔧 Installation** | Detailed setup guide | [Install Guide ↓](#-installation-guide) |
+| **📁 Structure** | Project organization | [View Structure ↓](#-project-structure) |
+| **⚙️ Environment** | Configuration variables | [View Config ↓](#-environment-variables) |
+| **📡 API Docs** | API endpoints & usage | [API Docs ↓](#-api-documentation) |
+| **🧪 Testing** | Testing procedures | [Run Tests ↓](#-testing) |
+| **🤝 Contributing** | How to contribute | [Contribute ↓](#-contributing) |
+| **📄 License** | License information | [View License ↓](#-license) |
+
 </div>
 
+---
 
 ## ✨ Features
 
-### 🩺 **Core Functionalities**
-- **Real-time Blood Request Management** - Create, track, and manage blood donation requests
-- **Smart Donor Matching** - Automatic matching based on blood type compatibility and location
-- **Interactive Blood Map** - Visualize donors and recipients on an interactive map
-- **In-app Chat System** - Secure communication between donors and recipients
-- **Real-time Notifications** - Instant alerts for requests, messages, and updates
-- **User Profiles** - Comprehensive donor/recipient profiles with medical information
+### 🎯 **Core Features**
+| Feature | Description | Status |
+|---------|-------------|--------|
+| **Real-time Requests** | Create and manage blood donation requests | ✅ Implemented |
+| **Smart Donor Matching** | Match donors by blood type and location | ✅ Implemented |
+| **Interactive Blood Map** | Visualize donors/recipients on map | ✅ Implemented |
+| **In-app Chat System** | Secure donor-recipient communication | ✅ Implemented |
+| **Real-time Notifications** | Instant alerts for updates | ✅ Implemented |
+| **User Profiles** | Comprehensive medical profiles | ✅ Implemented |
 
-### 🏥 **For Blood Recipients**
-- Create emergency blood requests with detailed patient information
-- Review and approve/reject donor offers
-- Track request status in real-time
-- Communicate directly with approved donors
-- View donor locations and estimated arrival times
+### 🏥 **For Recipients**
+| Feature | Benefit |
+|---------|---------|
+| Emergency Request Creation | Quick blood request submission |
+| Donor Management | Approve/reject donor offers |
+| Location Sharing | Easy donor coordination |
+| Status Tracking | Real-time request monitoring |
 
-### 🩸 **For Blood Donors**
-- Browse active requests matching your blood type
-- Accept/decline donation requests
-- Share location for easy coordination
-- Track donation history and impact
-- Receive urgent request notifications
+### 🩸 **For Donors**
+| Feature | Benefit |
+|---------|---------|
+| Request Browsing | View matching blood requests |
+| Quick Response | Accept/decline requests easily |
+| Impact Tracking | Monitor donations and impact |
+| Notification System | Get urgent request alerts |
 
-### 🔒 **Security & Privacy**
-- Secure user authentication with JWT tokens
-- Encrypted chat communications
-- Location privacy controls
-- Medical data protection
-- Role-based access control
+---
 
 ## 🛠️ Tech Stack
 
-### **Frontend**
-- **React 18** - UI library
-- **React Router DOM** - Routing
-- **Tailwind CSS** - Styling framework
-- **Framer Motion** - Animations
-- **React Leaflet** - Interactive maps
-- **Lucide React** - Icons
-- **Axios** - HTTP client
+### **Frontend Layer**
+| Technology | Purpose | Version |
+|------------|---------|---------|
+| **React** | UI Library | 18.2 |
+| **React Router** | Navigation | 6.8 |
+| **Tailwind CSS** | Styling | 3.3 |
+| **Framer Motion** | Animations | 10.0 |
+| **React Leaflet** | Maps | 4.2 |
+| **Axios** | HTTP Client | 1.3 |
 
-### **Backend**
-- **Django** - Web framework
-- **Django REST Framework** - API development
-- **PostgreSQL** - Database
-- **Redis** - Caching and real-time features
-- **JWT** - Authentication
-- **Django Channels** - WebSocket support
+### **Backend Layer**
+| Technology | Purpose | Version |
+|------------|---------|---------|
+| **Django** | Web Framework | 4.2 |
+| **Django REST** | API Framework | 3.14 |
+| **PostgreSQL** | Database | 12+ |
+| **Redis** | Caching/WebSockets | 7.0 |
+| **JWT** | Authentication | 5.0 |
+| **Django Channels** | Real-time features | 4.0 |
 
 ### **DevOps & Tools**
-- **Docker & Docker Compose** - Containerization
-- **GitHub Actions** - CI/CD
-- **Postman** - API testing
-- **ESLint & Prettier** - Code quality
+| Tool | Purpose |
+|------|---------|
+| **Docker** | Containerization |
+| **Docker Compose** | Multi-container orchestration |
+| **GitHub Actions** | CI/CD Pipeline |
+| **Postman** | API Testing |
+| **ESLint/Prettier** | Code Quality |
+
+---
 
 ## 🚀 Quick Start
 
-### Prerequisites
-- Node.js 16+ and npm/yarn
-- Python 3.8+
-- PostgreSQL 12+
-- Git
+### **Prerequisites Checklist**
+| Requirement | Version | Check |
+|-------------|---------|-------|
+| Node.js | 16+ | `node --version` |
+| Python | 3.8+ | `python --version` |
+| PostgreSQL | 12+ | `psql --version` |
+| Docker (Optional) | Latest | `docker --version` |
+| Git | Latest | `git --version` |
 
-### Docker Deployment (Recommended)
+### **Quick Deployment Methods**
+
+#### **Method 1: Docker (Recommended)**
 ```bash
-# Clone the repository
+# Clone repository
 git clone https://github.com/yourusername/bloodbridge.git
 cd bloodbridge
 
 # Start all services
 docker-compose up -d
 
-# Access the application
-# Frontend: http://localhost:3000
-# Backend API: http://localhost:8000
-# API Documentation: http://localhost:8000/api/docs/
+# Check running services
+docker-compose ps
 ```
+
+#### **Access Points**
+| Service | URL | Port | Default Credentials |
+|---------|-----|------|---------------------|
+| **Frontend** | http://localhost:3000 | 3000 | User registration |
+| **Backend API** | http://localhost:8000 | 8000 | - |
+| **API Docs** | http://localhost:8000/api/docs/ | 8000 | - |
+| **Admin Panel** | http://localhost:8000/admin | 8000 | Created during setup |
+
+---
 
 ## 🔧 Installation Guide
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/yourusername/bloodbridge.git
-cd bloodbridge
-```
+### **Step-by-Step Setup**
 
-### 2. Backend Setup
+#### **1. Backend Setup**
 ```bash
-# Navigate to backend directory
+# Navigate to backend
 cd backend
 
-# Create virtual environment
+# Create and activate virtual environment
 python -m venv venv
-
-# Activate virtual environment
-# On Windows:
-venv\Scripts\activate
-# On macOS/Linux:
-source venv/bin/activate
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
 
 # Install dependencies
 pip install -r requirements.txt
 
-# Set up environment variables
+# Configure environment
 cp .env.example .env
-# Edit .env file with your configuration
+# Edit .env with your settings
 
-# Run database migrations
+# Database setup
 python manage.py migrate
-
-# Create superuser (admin)
 python manage.py createsuperuser
 
-# Start development server
+# Run server
 python manage.py runserver
 ```
 
-### 3. Frontend Setup
+#### **2. Frontend Setup**
 ```bash
-# Navigate to frontend directory
-cd ../frontend
+# Navigate to frontend
+cd frontend
 
 # Install dependencies
 npm install
-# or
-yarn install
+
+# Configure environment
+cp .env.example .env.local
+# Edit .env.local
 
 # Start development server
 npm start
-# or
-yarn start
 ```
 
-### 4. Database Setup
+#### **3. Database Configuration**
 ```sql
--- Create PostgreSQL database
+-- PostgreSQL setup
 CREATE DATABASE bloodbridge;
-CREATE USER bloodbridge_user WITH PASSWORD 'your_password';
+CREATE USER bloodbridge_user WITH PASSWORD 'secure_password';
 GRANT ALL PRIVILEGES ON DATABASE bloodbridge TO bloodbridge_user;
 ALTER USER bloodbridge_user CREATEDB;
 ```
 
+---
+
 ## 📁 Project Structure
 
+### **Directory Layout**
 ```
 bloodbridge/
-├── frontend/                    # React Frontend Application
-│   ├── public/                  # Static assets
-│   ├── src/
-│   │   ├── components/          # Reusable UI components
-│   │   │   ├── Dashboard/       # Dashboard components
-│   │   │   ├── Chat/           # Chat system components
-│   │   │   ├── Common/         # Shared components
-│   │   │   └── Layout/         # Layout components
-│   │   ├── pages/              # Page components
-│   │   ├── services/           # API services
-│   │   ├── utils/              # Utility functions
-│   │   ├── styles/             # Global styles
-│   │   ├── App.jsx             # Main App component
-│   │   └── main.jsx            # Application entry point
+├── 📁 frontend/                 # React Application
+│   ├── 📁 public/              # Static assets
+│   ├── 📁 src/
+│   │   ├── 📁 components/      # UI Components
+│   │   │   ├── 📁 Dashboard/   # Dashboard components
+│   │   │   ├── 📁 Chat/        # Chat system
+│   │   │   ├── 📁 Common/      # Shared components
+│   │   │   └── 📁 Layout/      # Layout components
+│   │   ├── 📁 pages/          # Page components
+│   │   ├── 📁 services/       # API services
+│   │   ├── 📁 utils/          # Utility functions
+│   │   ├── 📁 styles/         # Global styles
+│   │   ├── App.jsx           # Main component
+│   │   └── main.jsx          # Entry point
 │   ├── package.json
-│   └── vite.config.js          # Vite configuration
+│   └── vite.config.js
 │
-├── backend/                     # Django Backend API
-│   ├── bloodbridge/            # Main project settings
-│   ├── api/                    # API application
-│   │   ├── views/              # API views
-│   │   ├── serializers/        # Data serializers
-│   │   ├── models/             # Database models
-│   │   ├── urls.py             # API URL routing
-│   │   └── permissions.py      # Custom permissions
-│   ├── users/                  # User management app
-│   ├── donations/              # Blood donation app
-│   ├── notifications/          # Notifications app
-│   ├── chat/                   # Real-time chat app
-│   ├── manage.py               # Django management script
-│   └── requirements.txt        # Python dependencies
+├── 📁 backend/                 # Django API
+│   ├── 📁 bloodbridge/        # Project config
+│   ├── 📁 api/                # API application
+│   │   ├── 📁 views/          # API views
+│   │   ├── 📁 serializers/    # Data serializers
+│   │   ├── 📁 models/         # Database models
+│   │   ├── urls.py           # URL routing
+│   │   └── permissions.py    # Custom permissions
+│   ├── 📁 users/             # User management
+│   ├── 📁 donations/         # Blood donation logic
+│   ├── 📁 notifications/     # Notifications system
+│   ├── 📁 chat/              # Real-time chat
+│   ├── manage.py            # Django CLI
+│   └── requirements.txt     # Dependencies
 │
-├── docker-compose.yml          # Docker Compose configuration
-├── Dockerfile                  # Docker configuration
-├── .env.example               # Environment variables template
-├── .gitignore                 # Git ignore file
-└── README.md                  # This file
+└── 📄 docker-compose.yml     # Docker config
 ```
+
+---
 
 ## 🔧 Environment Variables
 
-### Backend (.env file)
-```env
-# Django Settings
-DEBUG=True
-SECRET_KEY=your-secret-key-here
-ALLOWED_HOSTS=localhost,127.0.0.1
+### **Backend Configuration (.env)**
+| Variable | Description | Example |
+|----------|-------------|---------|
+| `DEBUG` | Debug mode | `True` |
+| `SECRET_KEY` | Django secret key | `your-secret-key` |
+| `DB_NAME` | Database name | `bloodbridge` |
+| `DB_USER` | Database user | `bloodbridge_user` |
+| `DB_PASSWORD` | Database password | `secure_password` |
+| `DB_HOST` | Database host | `localhost` |
+| `DB_PORT` | Database port | `5432` |
+| `JWT_SECRET_KEY` | JWT secret | `jwt-secret-key` |
+| `REDIS_URL` | Redis connection | `redis://localhost:6379/0` |
+| `CORS_ALLOWED_ORIGINS` | Allowed origins | `http://localhost:3000` |
 
-# Database
-DB_NAME=bloodbridge
-DB_USER=bloodbridge_user
-DB_PASSWORD=your_password
-DB_HOST=localhost
-DB_PORT=5432
+### **Frontend Configuration (.env.local)**
+| Variable | Description | Example |
+|----------|-------------|---------|
+| `VITE_API_URL` | API base URL | `http://localhost:8000/api` |
+| `VITE_WS_URL` | WebSocket URL | `ws://localhost:8000/ws` |
+| `VITE_MAPBOX_TOKEN` | Mapbox token | `pk.yourtoken` |
+| `VITE_APP_NAME` | Application name | `BloodBridge` |
+| `VITE_APP_VERSION` | App version | `1.0.0` |
 
-# JWT Authentication
-JWT_SECRET_KEY=your-jwt-secret-key
-
-# Redis (for caching and WebSockets)
-REDIS_URL=redis://localhost:6379/0
-
-# CORS Settings
-CORS_ALLOWED_ORIGINS=http://localhost:3000
-
-# Email Configuration (for notifications)
-EMAIL_HOST=smtp.gmail.com
-EMAIL_PORT=587
-EMAIL_HOST_USER=your-email@gmail.com
-EMAIL_HOST_PASSWORD=your-app-password
-EMAIL_USE_TLS=True
-```
-
-### Frontend (.env file)
-```env
-# API Configuration
-VITE_API_URL=http://localhost:8000/api
-VITE_WS_URL=ws://localhost:8000/ws
-
-# Map Configuration
-VITE_MAPBOX_TOKEN=your-mapbox-token
-
-# Application Settings
-VITE_APP_NAME=BloodBridge
-VITE_APP_VERSION=1.0.0
-```
+---
 
 ## 🎯 API Documentation
 
-### Base URL
+### **Base URL**
 ```
 http://localhost:8000/api/
 ```
 
-### Authentication Endpoints
-```http
-POST /api/auth/register/     # User registration
-POST /api/auth/login/        # User login
-POST /api/auth/logout/       # User logout
-GET  /api/auth/user/         # Get current user
-```
+### **Authentication Endpoints**
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `POST` | `/auth/register/` | User registration |
+| `POST` | `/auth/login/` | User login |
+| `POST` | `/auth/logout/` | User logout |
+| `GET` | `/auth/user/` | Get current user |
 
-### Blood Requests Endpoints
-```http
-GET    /api/requests/              # List all requests
-POST   /api/requests/              # Create new request
-GET    /api/requests/{id}/         # Get request details
-PUT    /api/requests/{id}/         # Update request
-DELETE /api/requests/{id}/         # Delete request
-POST   /api/requests/{id}/accept/  # Accept request as donor
-POST   /api/requests/{id}/ignore/  # Ignore request
-```
+### **Blood Requests**
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `GET` | `/requests/` | List all requests |
+| `POST` | `/requests/` | Create new request |
+| `GET` | `/requests/{id}/` | Get request details |
+| `PUT` | `/requests/{id}/` | Update request |
+| `DELETE` | `/requests/{id}/` | Delete request |
+| `POST` | `/requests/{id}/accept/` | Accept as donor |
+| `POST` | `/requests/{id}/ignore/` | Ignore request |
 
-### User Management
-```http
-GET    /api/users/                 # List users
-GET    /api/users/{id}/            # User details
-PUT    /api/users/{id}/            # Update user
-GET    /api/users/profile/         # Current user profile
-POST   /api/users/update-location/ # Update user location
-```
+### **User Management**
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `GET` | `/users/` | List users |
+| `GET` | `/users/{id}/` | User details |
+| `PUT` | `/users/{id}/` | Update user |
+| `GET` | `/users/profile/` | Current profile |
+| `POST` | `/users/update-location/` | Update location |
 
-### Chat System
-```http
-GET    /api/chat/rooms/            # List chat rooms
-GET    /api/chat/rooms/{id}/       # Get room details
-GET    /api/chat/rooms/{id}/messages/  # Get messages
-POST   /api/chat/rooms/{id}/messages/  # Send message
-WS     /ws/chat/{room_id}/         # WebSocket for real-time chat
-```
+### **Chat System**
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `GET` | `/chat/rooms/` | List chat rooms |
+| `GET` | `/chat/rooms/{id}/` | Room details |
+| `GET` | `/chat/rooms/{id}/messages/` | Get messages |
+| `POST` | `/chat/rooms/{id}/messages/` | Send message |
+| `WS` | `/ws/chat/{room_id}/` | WebSocket chat |
 
-### Notifications
-```http
-GET    /api/notifications/         # List notifications
-POST   /api/notifications/{id}/mark-read/  # Mark as read
-POST   /api/notifications/mark-all-read/   # Mark all as read
-DELETE /api/notifications/{id}/    # Delete notification
-```
+### **Notifications**
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `GET` | `/notifications/` | List notifications |
+| `POST` | `/notifications/{id}/mark-read/` | Mark as read |
+| `POST` | `/notifications/mark-all-read/` | Mark all read |
+| `DELETE` | `/notifications/{id}/` | Delete notification |
+
+---
 
 ## 🧪 Testing
 
-### Backend Testing
-```bash
-# Run Django tests
-cd backend
-python manage.py test
+### **Testing Commands**
+| Test Type | Command | Coverage Report |
+|-----------|---------|-----------------|
+| **Backend Tests** | `python manage.py test` | `coverage report` |
+| **Frontend Tests** | `npm test` | `npm test -- --coverage` |
+| **E2E Tests** | `npm run cypress:open` | N/A |
+| **All Tests** | `npm run test:all` | N/A |
 
-# Run with coverage
-coverage run manage.py test
-coverage report
-```
+### **Test Coverage Goals**
+| Component | Target Coverage |
+|-----------|-----------------|
+| API Endpoints | 90% |
+| React Components | 85% |
+| Utility Functions | 95% |
+| Models & Serializers | 90% |
 
-### Frontend Testing
-```bash
-# Run React tests
-cd frontend
-npm test
-# or
-yarn test
-
-# Run tests with coverage
-npm test -- --coverage
-```
-
-### End-to-End Testing
-```bash
-# Run Cypress tests (if configured)
-npm run cypress:open
-# or
-npm run cypress:run
-```
+---
 
 ## 🤝 Contributing
 
-We welcome contributions! Please follow these steps:
+### **Contribution Workflow**
+| Step | Action | Command |
+|------|--------|---------|
+| 1 | Fork repository | GitHub UI |
+| 2 | Create branch | `git checkout -b feature-name` |
+| 3 | Make changes | Edit files |
+| 4 | Commit changes | `git commit -m "Description"` |
+| 5 | Push to fork | `git push origin feature-name` |
+| 6 | Open PR | GitHub UI |
 
-1. **Fork the repository**
-2. **Create a feature branch**
-   ```bash
-   git checkout -b feature/AmazingFeature
-   ```
-3. **Commit your changes**
-   ```bash
-   git commit -m 'Add some AmazingFeature'
-   ```
-4. **Push to the branch**
-   ```bash
-   git push origin feature/AmazingFeature
-   ```
-5. **Open a Pull Request**
+### **Code Standards**
+| Language | Standards | Tools |
+|----------|-----------|-------|
+| **Python** | PEP 8, Django Style | Flake8, Black |
+| **JavaScript** | Airbnb Style Guide | ESLint, Prettier |
+| **React** | Functional Components | React Hooks Rules |
+| **CSS** | Tailwind Utility First | Tailwind Classes |
 
-### Development Guidelines
-- Follow the existing code style
-- Write meaningful commit messages
-- Add tests for new features
-- Update documentation as needed
-- Ensure no linting errors
+### **PR Checklist**
+- [ ] Tests added/updated
+- [ ] Documentation updated
+- [ ] No linting errors
+- [ ] Code follows standards
+- [ ] Changes are focused
 
-### Code Style
-- **Python**: Follow PEP 8 guidelines
-- **JavaScript/React**: Use ESLint and Prettier configuration
-- **CSS**: Follow Tailwind CSS utility-first approach
+---
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
+### **MIT License**
 ```
 MIT License
 
@@ -407,35 +387,30 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE PERFORMANCE THEREOF.
 ```
 
-## 👨‍💻 Authors
-
-- **Your Name** - *Initial work* - [YourGitHub](https://github.com/yourusername)
-- **Contributors** - See the [contributors list](https://github.com/yourusername/bloodbridge/graphs/contributors)
-
-## 🙏 Acknowledgments
-
-- Thanks to all blood donors who inspire this project
-- Open source community for amazing tools and libraries
-- Medical professionals for guidance and feedback
-- Test users for valuable feedback and bug reports
-
-## 📞 Support
-
-For support, please:
-1. Check the [documentation](#)
-2. Search for existing [issues](https://github.com/yourusername/bloodbridge/issues)
-3. Create a new issue if needed
+### **License Summary**
+| Aspect | Details |
+|--------|---------|
+| **License Type** | MIT License |
+| **Commercial Use** | ✅ Allowed |
+| **Modification** | ✅ Allowed |
+| **Distribution** | ✅ Allowed |
+| **Private Use** | ✅ Allowed |
+| **Liability** | ❌ No warranty |
+| **Warranty** | ❌ None |
 
 ---
 
 <div align="center">
 
-### 💖 Donate Blood, Save Lives!
+## 💖 Support & Connect
 
-*Every drop counts. Join us in making a difference.*
+| Platform | Link | Purpose |
+|----------|------|---------|
+| **GitHub** | [yourusername/bloodbridge](https://github.com/yourusername/bloodbridge) | Source Code |
+| **Issues** | [Report Bug](https://github.com/yourusername/bloodbridge/issues) | Bug Reports |
+| **Discussions** | [Join Discussion](https://github.com/yourusername/bloodbridge/discussions) | Q&A |
+| **Email** | support@bloodbridge.org | Support |
 
-[![Star on GitHub](https://img.shields.io/badge/⭐_Star_this_repository-000?style=for-the-badge&logo=github)](https://github.com/yourusername/bloodbridge)
-[![Report Bug](https://img.shields.io/badge/🐛_Report_Bug-000?style=for-the-badge&logo=github)](https://github.com/yourusername/bloodbridge/issues)
-[![Request Feature](https://img.shields.io/badge/💡_Request_Feature-000?style=for-the-badge&logo=github)](https://github.com/yourusername/bloodbridge/issues)
+### 🩸 *Every Drop Counts - Join Us in Saving Lives!*
 
 </div>
