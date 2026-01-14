@@ -237,17 +237,7 @@ npm run test:all
 
 ---
 
-## 📄 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
----
-
-## 📞 Support & Contact
-- **GitHub Issues**: [Report bugs](https://github.com/yourusername/red-drop/issues)
-- **Documentation**: Included in `/docs` folder
-- **Email**: support@reddrop.org
-
----
 
 <div align="center">
 
